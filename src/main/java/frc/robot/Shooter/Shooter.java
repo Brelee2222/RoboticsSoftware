@@ -23,8 +23,8 @@ public class Shooter extends SubsystemBase {
   }
 
   public void setPercent(double percent) {
-    RearMotor.set(ControlMode.PercentOutput, percent);
-    FrontMotor.set(ControlMode.PercentOutput, percent);
+    RearMotor.set(ControlMode.PercentOutput, -percent);
+    FrontMotor.set(ControlMode.PercentOutput, -percent);
   }
 
   public Command commandStop() {

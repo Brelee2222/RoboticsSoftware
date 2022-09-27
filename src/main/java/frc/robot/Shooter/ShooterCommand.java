@@ -6,6 +6,7 @@ public class ShooterCommand extends CommandBase{
     Shooter shooter;
     public ShooterCommand(Shooter shooter) {
         this.shooter = shooter;
+        addRequirements(shooter);
     }
 
     @Override

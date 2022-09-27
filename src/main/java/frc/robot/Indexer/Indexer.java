@@ -23,8 +23,8 @@ public class Indexer extends SubsystemBase {
   }
 
   public void setPercent(double percent) {
-    bottomMotor.set(ControlMode.PercentOutput, percent);
-    topMotor.set(ControlMode.PercentOutput, percent);
+    bottomMotor.set(ControlMode.PercentOutput, -percent);
+    topMotor.set(ControlMode.PercentOutput, -percent);
   }
 
   public Command commandStop() {

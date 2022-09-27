@@ -3,10 +3,10 @@ package frc.robot.DriveTrain;
 
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.can.TalonFX;
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 
-public class DriveTrain extends CommandBase {
+public class DriveTrain extends SubsystemBase {
     TalonFX rightBack = new TalonFX(2);
     TalonFX rightFront = new TalonFX(1);
     TalonFX leftBack = new TalonFX(4);
