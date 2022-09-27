@@ -6,7 +6,7 @@ import edu.wpi.first.wpilibj2.command.CommandBase;
 
 public class IndexerCommand extends CommandBase {
     Indexer indexer;
-    IndexerCommand(Indexer indexer) {
+    public IndexerCommand(Indexer indexer) {
         this.indexer = indexer;
     }
 
