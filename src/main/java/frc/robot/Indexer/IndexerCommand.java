@@ -1,7 +1,5 @@
 package frc.robot.Indexer;
 
-import java.lang.ModuleLayer.Controller;
-
 import edu.wpi.first.wpilibj2.command.CommandBase;
 
 public class IndexerCommand extends CommandBase {
@@ -16,7 +14,7 @@ public class IndexerCommand extends CommandBase {
         indexer.setPercent(0.5);
     }
 
-    public void stop() {
+    public void end(boolean interruptable) {
         indexer.setPercent(0);
     }
 }

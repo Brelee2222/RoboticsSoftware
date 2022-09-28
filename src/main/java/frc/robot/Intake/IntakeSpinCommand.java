@@ -21,7 +21,7 @@ public class IntakeSpinCommand extends CommandBase {
 
     @Override
     public void end(boolean interrupted) {
-        intake.stop();
+        intake.setFold(true);
     }
 
     @Override
