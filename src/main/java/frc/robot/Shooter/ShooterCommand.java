@@ -13,8 +13,8 @@ public class ShooterCommand extends CommandBase{
     public void execute() {
         shooter.setPercent(0.5);
     }
-
-    public void stop() {
+    @Override
+    public void end(boolean interruptable) {
         shooter.setPercent(0);
     }
 }
